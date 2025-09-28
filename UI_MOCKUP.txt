@@ -1,0 +1,77 @@
+BIBLE VERSE APP - UI MOCKUP
+============================
+
+📱 MAIN SCREEN (home_screen.dart)
+┌─────────────────────────────────┐
+│ Bible Verse            🎭 📺   │ <- AppBar with Cast button
+├─────────────────────────────────┤
+│                                 │
+│  ╭─────────────────────────────╮ │
+│  │        🎤                   │ │
+│  │                             │ │
+│  │ Say a Bible verse reference │ │
+│  │    to see it displayed      │ │
+│  │                             │ │
+│  │ Try: "John 3:16", "Romans   │ │
+│  │ 8:28", "Psalms 23:1"        │ │
+│  ╰─────────────────────────────╯ │
+│                                 │
+│  [🔴 Listening...]              │ <- When active
+│  [I heard: "John 3 16"]         │ <- Speech recognition
+│                                 │
+│  ╭─────────────────────────────╮ │
+│  │        John 3:16            │ │ <- Reference
+│  ╰─────────────────────────────╯ │
+│                                 │
+│  ╭─────────────────────────────╮ │
+│  │                             │ │
+│  │ For God so loved the world  │ │ <- Verse text
+│  │ that he gave his one and    │ │
+│  │ only Son, that whoever      │ │
+│  │ believes in him shall not   │ │
+│  │ perish but have eternal     │ │
+│  │ life.                       │ │
+│  │                             │ │
+│  ╰─────────────────────────────╯ │
+│                                 │
+│  [📡 Casting to external        │ <- Cast status
+│   display]                      │
+│                                 │
+│                          🎤     │ <- Large FAB (mic button)
+└─────────────────────────────────┘
+
+
+📺 CAST SCREEN (cast_screen.dart)
+┌─────────────────────────────────┐
+│                                 │
+│                                 │
+│        ╭─────────────────╮       │
+│        │    John 3:16    │       │ <- Large reference
+│        ╰─────────────────╯       │
+│                                 │
+│                                 │
+│   For God so loved the world    │ <- Large verse text
+│   that he gave his one and      │   (white on black/gradient)
+│   only Son, that whoever        │
+│   believes in him shall not     │
+│   perish but have eternal       │
+│   life.                         │
+│                                 │
+│        — John 3:16 —            │ <- Attribution
+│                                 │
+│                                 │
+│     Bible Verse App             │ <- Subtle branding
+└─────────────────────────────────┘
+
+VOICE RECOGNITION FORMATS SUPPORTED:
+• "John 3:16"
+• "Romans 8:28" 
+• "First Corinthians 13:4"
+• "John chapter 3 verse 16"
+• "Psalm 23 verse 1"
+• "Genesis 1:1"
+
+CASTING BEHAVIOR:
+📱 Phone: Shows controls + verse
+📺 Cast Screen: Shows only verse (large, readable)
+🎭 Dual screen mode for presentations
